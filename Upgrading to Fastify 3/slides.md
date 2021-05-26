@@ -45,8 +45,6 @@ We will be covering:
 - 📝 **Backstory**
 - 🎨 **5 Lessons**
 - 🧑‍💻 **Migration Summary**
-<br>
-<br>
 
 <style>
 h1 {
@@ -61,7 +59,7 @@ h1 {
 </style>
 
 <!--
-Over the course of this presentation, we’ll be going over how upgraded one of our backend service docs render, which is a service that improves the rendering and versatility of what we’re able to do for the Microsoft documentation. So we’ll give a brief backstory/disclaimer about our codebase, then go over the 5 lessons/tips learned which is the heart of the presentation, and last but no least we’ll then give a brief summary of how I felt the migration went.
+Over the course of this presentation, we’ll be going over how we upgraded one of our backend services docs render, which is a service that improves the rendering and versatility of what we’re able to do for the Microsoft documentation, from Fastify 2 to 3.First we’ll give a brief backstory/disclaimer about our codebase, then go over the 5 lessons/tips learned during the process of the Fastify upgrade. These 5 lessons are the heart of the presentation, and last but not least we’ll then end with a migration summary. Everyone cool with that? Awesome!
 -->
 
 ---
@@ -75,6 +73,14 @@ Our Codebase before the upgrade:
   - ✅ TypeScript
   - ✅ Not large <small>*Relative to an enterprise codebase</small> 
   - ✅ Dependencies are all updated
+
+<!--
+Let's start on our backstory. Now quick disclaimer for anyone watching this talk. I wanted to talk about our codebase before the upgrade. First off, before we upgraded to Fastify 3, our codebase was already using TypeScript. Certain topics or points in this talk could prove to be a different experience for you if you are not using TypeScript. That's primarily because of us taking advantage of the type system provided both within Fastify and our codebase.
+
+Next, our codebase isn't really that large especially if you compare it an enterprise codebase. I'd say the size of our codebase would be equivalent to maybe the size of Vue 2's codebase maybeee React. Just wanted to highlight that. For individuals who may have a larger codebase the lessons/approaches I talk about may not be applicable to your codebase.
+
+Last but not least. All of our dependencies were current. While upgrading we didn't have to worry much about breaking changes in other libraries. That made the upgrade less complex in comparison to other upgrades I've done in the past on other projects I've been on.
+-->
 
 ---
 
@@ -92,6 +98,10 @@ img {
 }
 
 </style>
+
+<!--
+Now that we've coved those three points. Let's dive in!
+-->
 
 ---
 
@@ -117,6 +127,11 @@ Understand the breaking changes
 
 </div>
 </div>
+
+<!--
+Just like with many other libraries and frameworks. Major versioning usually comes with breaking changes. An example would be Vue 2 even Vue 3. Breaking changes aren't always a bad thing, but not understanding why they happen is, in my opinion. If you think  a major versioning upgrade of a library or framework is going to break many parts of your application. Document the end to end process of how you might want to upgrade and assess the possible pain points on your application. For documenting just about anything, I typically open up one note and try to map out what parts or files of the codebase might give me the most trouble. I also reference the migration guide. Fastify actually has one, I recommend you look into if you haven't already.
+-->
+
 ---
 
 # Lesson Two
@@ -149,7 +164,11 @@ fastify.register(error);
 </div>
 
 <!--
-When it upgrading to Fastify 3, there were many breaking changes. when I joined the team and Microsoft, I took the initative of Version bumping and trying to tackle the large list of errors. Turns out that wasn't the best approach. In other words it took me several tries to tackle this. What I ended up doing was stripping down the app to it's basic functionality fix the foundation and tackle the upgrade in increments. Fastify made it easiser because it has a plugin centric architecture. As you can see to the right are some of the plugins we've created, I narrowed down the functionality to a core plugin of our app and went onward from there. Which brings me to a point inside of this. The Plugin System
+Next, is Lesson Number Two. Fix the foundation and go upwards. Or in other words, establish a stable foundation and build ontop of that. 
+
+When I joined the team and Microsoft, I took the initative of wanting to tackle the upgrade. 
+
+I tried a standard approach of version bumping and dig into tackling the large list of errors. Turns out that wasn't the best approach. It was so rough I ended up abandoning and deleting the branch. In other words, this took me several tries. I created a fresh branch with and find a different approach. Tackle the upgrade incrementally. Stripping down the app to it's basic functionality fix the foundation and tackle the upgrade in increments. Fastify made it easier because of it's plugin centric architecture. As you can see to the right are some of the plugins we've created, I narrowed down the functionality to a core plugin of our app and went onward from there. Which brings me to a point inside of this. The Plugin System
 -->
 
 ---
@@ -297,7 +316,7 @@ TypeScript, TypeScript, TypeScript.....
 ---
 
 # Lesson Five
-More Test Covereage
+More Test Coverage
 - 70-80% coverage
 - Instill more confidence after changes
 - Consistency
@@ -360,13 +379,13 @@ What made it successful?
 </div>
 ---
 
-# Reccomendation
+# Recommendation
 
 - Document changes & assess codebase
 - Work bottom to top
 - Reference Fastify source code & test cases
 - Take advantage of TypeScript
-- Test Covereages
+- Test Coverages
 ---
 
 # Let's connect
