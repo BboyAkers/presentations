@@ -26,11 +26,6 @@ Lessons learned from Upgrading Fastify **2.15.0** to **3.x.x**
   </span>
 </div>
 
-<a href="https://github.com/slidevjs/slidev" target="_blank" alt="GitHub"
-  class="abs-br m-6 text-xl icon-btn opacity-50 !border-none !hover:text-white">
-  <carbon-logo-github />
-</a>
-
 <!--
 The last comment block of each slide will be treated as slide notes. It will be visible and editable in Presenter Mode along with the slide. [Read more in the docs](https://sli.dev/guide/syntax.html#notes)
 -->
@@ -109,7 +104,7 @@ Now that we've coved those three points. Let's dive in!
 
 Understand the breaking changes
 - Major Version === Breaking Changes
-- Document end to end process 
+- Document the process 
 - Assess possible pain points
 
 <div grid="~ cols-2" style="margin-top: 50px">
@@ -129,7 +124,7 @@ Understand the breaking changes
 </div>
 
 <!--
-Just like with many other libraries and frameworks. Major versioning usually comes with breaking changes. An example would be Vue 2 even Vue 3. Breaking changes aren't always a bad thing, but not understanding why they happen is, in my opinion. If you think  a major versioning upgrade of a library or framework is going to break many parts of your application. Document the end to end process of how you might want to upgrade and assess the possible pain points on your application. For documenting just about anything, I typically open up one note and try to map out what parts or files of the codebase might give me the most trouble. I also reference the migration guide. Fastify actually has one, I recommend you look into if you haven't already.
+Just like with many other libraries and frameworks. Major versioning usually comes with breaking changes. An example would be Vue 2 even Vue 3. If you think  a major versioning upgrade of a library or framework is going to break many parts of your application. Document the end to end process of how you might want to upgrade and assess the possible pain points in your application. For documenting just about anything, I typically use up one note, some people use notion.Try to map out what parts or files of the codebase might give me the most trouble. I also reference the migration guide. Fastify actually has one, I recommend you look into if you haven't already.
 -->
 
 ---
