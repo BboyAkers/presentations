@@ -27,10 +27,23 @@ The last comment block of each slide will be treated as slide notes. It will be 
 ---
 
 # Overview
-  
-- 📝 **What is Vuetify?**
+<div grid="~ cols-2 gap-2" m="-t-2">
+
+<div>
+
+- 📝 **Summary of Vuetify?**
 - 🛠 **Vuetiful Updates**
 - 🧑‍💻 **Upgrading to v3**
+
+</div>
+
+<div>
+
+<img src="src/assets/undraw_list.png" />
+
+</div>
+
+</div>
 
 ---
 
@@ -38,30 +51,40 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 ---
 
-# What is Vuetify?
+# Summary of Vuetify?
 
 <div grid="~ cols-3 gap-2" m="-t-2">
 
 <div>
 UI Framework
-<img src="https://seeklogo.com/images/V/vuetify-logo-3BCF73C928-seeklogo.com.png" style="height: 150px;" />
+
+<img src="src/assets/floating_icons.png" />
+<img src="src/assets/btn_size.png" />
 
 </div>
 
 <div>
 Material Design
-<img src="vuetifyjs_components_cards.png" style="height: 250px;" />
+
+<img src="src/assets/material-design.png" style="height: 200px;" />
 </div>
 
 <div>
 Quick to Learn
+
+<img src="src/assets/arrow_going_up.png" style="height: 130px; margin-top: 75px;" />
 </div>
 
 </div>
+<style>
+ img {
+   margin-top: 25px;
+ }
+</style>
 
 ---
 layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
+image: vuetify_logo.png
 ---
 
 # Vuetiful Updates
@@ -73,71 +96,128 @@ image: https://source.unsplash.com/collection/94734566/1920x1080
 - Global Configuration
 
 ---
-layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
----
 
 # Component Declaration
 
-<div grid="~ cols-3 gap-2" m="-t-2">
+<div grid="~ cols-2 gap-2" m="-t-2">
 
 <div>
-Card One (simplicity)
+
+Option One
 
 ```html
 <v-card
   density="comfortable"
   elevation="6"
-  prepend-avatar="...jpg"
-  title="Danger Noodle"
-  subtitle="Noddle of Danger"
-  text=""
+  prepend-avatar="src/assets/profile_pic.png"
+  title="BboyAkers"
+  subtitle="Software Engineer"
+  text="I enjoy frontend development. 
+        Outside of work I contribute to
+        MetaMask, Vuetify, and freeCodeCamp Dallas."
 />
 ```
 </div>
 
 <div>
-Card Two
+
+<img src="src/assets/vuetify_github_card.png" style="height: 150px; margin-top: 75px;">
+
+
+- Compact
+- Simplicity
+- Iteration on simple cards
+</div>
+
+
+</div>
+
+---
+
+
+# Component Declaration
+
+
+<div grid="~ cols-2 gap-2" m="-t-2">
+
+<div>
+
+Option Two
 
 ```html
 <v-card 
   density="comfortable"
   elevation="6"
 >
-  <v-card-item>
-    <v-card-avatar image="..." />
-  
+<v-card-item>
   <v-card-header>
-    <v-card-title>...</v-card-title>
-    <v-card-subtitle>...</v-card-subtitle>
+    <v-card-avatar image="src/assets/profile_pic.png" />
+    <v-card-header-text>
+      <v-card-title>BboyAkers</v-card-title>
+      <v-card-subtitle>Software Engineer</v-card-subtitle>
+    </v-card-header-text>
   </v-card-header>
 
-  <v-card-text>...</v-card-text>
-
-  </v-card-item>
+  <v-card-text>
+    I enjoy frontend development. Outside of work 
+    I contribute to MetaMask, Vuetify, 
+    and freeCodeCamp Dallas.
+  </v-card-text>
+</v-card-item>
 </v-card>
 ```
 </div>
 
 <div>
-Card Three
+
+<img src="src/assets/vuetify_github_card.png" style="height: 150px; margin-top: 75px;">
+
+- Most Common
+- More descriptive
+- More customization
+
+</div>
+
+</div>
+---
+
+# Component Declaration
+
+
+<div grid="~ cols-2 gap-2" m="-t-2">
+
+<div>
+
+Option Three
 
 ```html
 <v-card 
   density="comfortable"
   elevation="6"
 >
+  <v-card-avatar image="src/assets/vuetify_github_card.png" />
 
-<template #title>Danger Noodle</template>
+  <template #title>BboyAkers</template>
 
-<template #subtitle>Noddle of Danger</template>
+  <template #subtitle>Software Engineer</template>
 
-<template #text>...</template>
-
-<template #append>...</template>
+  <template #text>
+    I enjoy frontend development. Outside of work 
+    I contribute to MetaMask, Vuetify, and freeCodeCamp Dallas.
+  </template>
 
 </v-card>
 ```
+</div>
+
+<div>
+
+<img src="src/assets/vuetify_github_card.png" style="height: 150px; margin-top: 75px;">
+
+- Great median
+- More concise than 'Option Two'
+- Not sacrificing versatility compared to 'Option One'
+
 </div>
 
 </div>
@@ -145,8 +225,22 @@ Card Three
 
 # Custom Icons
 
+
 <div grid="~ cols-2 gap-4">
 <div>
+
+
+```js
+import { ar, en } from 'vuetify/src/locale';
+export default createVuetify({
+  locale: {
+    messages: {
+      en,
+      ar,
+    }
+  },
+})
+```
 
 ```html
 <template>
@@ -160,10 +254,18 @@ Card Three
 </template>
 ```
 
+
+
 </div>
 <div>
 
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true">
+- Importing and declaration
+- Easier to use custom icons
+- test
+
+<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" style="height: 150px;">
+
+
 
 </div>
 </div>
@@ -177,15 +279,14 @@ Card Three
 <div>
 
 ```js
+import { ar, en } from 'vuetify/src/locale';
 export default createVuetify({
   locale: {
     messages: {
       en,
       ar,
-      sv,
-      ja,
-    },
-  }
+    }
+  },
 })
 ```
 
@@ -197,16 +298,50 @@ export default createVuetify({
 </div>
 </div>
 
-- Auto rtl and ltr support
-- using vue-i18n
+- Auto right to Left(RTL) support
+- Using vue-i18n
 
 ---
 
 # Theme
+### Inject Themes inside our current theme
+<div grid="~ cols-2 gap-4">
 
-- Themes
-- Locale(i18n)
-- Icons
+<div>
+
+```html{all|2|2-12|13-20|all}
+<v-container>
+  <v-theme-provider theme="dark">
+    <v-card>
+      <v-card-text>
+        Injected Dark Theme Card
+      </v-card-text>
+
+      <v-card-actions>
+        <v-btn color="primary">Github</v-btn>
+      </v-card-actions>
+    </v-card>
+  </v-theme-provider>
+  <v-card>
+    <v-card-text>
+     Default Card Theme
+    </v-card-text>
+    <v-card-actions>
+      <v-btn color="primary">Github</v-btn>
+    </v-card-actions>
+  </v-card>
+</v-container>
+```
+
+</div>
+
+<div>
+
+<img src="src/assets/theme_cards.png" style="height: 350px; margin: 0 auto">
+
+</div>
+
+</div>
 
 ---
 
@@ -241,137 +376,45 @@ export default createVuetify({
 
 ---
 
-# Animations
+# Upgrade/Testing?
 
-Animations are powered by [@vueuse/motion](https://motion.vueuse.org/).
+<div grid="~ cols-2 gap-2" m="-t-2">
 
-```html
-<div
-  v-motion
-  :initial="{ x: -80 }"
-  :enter="{ x: 0 }">
-  Slidev
-</div>
-```
+<div>
 
-<div class="w-60 relative mt-6">
-  <div class="relative w-40 h-40">
-    <img
-      v-motion
-      :initial="{ x: 800, y: -100, scale: 1.5, rotate: -50 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-square.png"
-    />
-    <img
-      v-motion
-      :initial="{ y: 500, x: -100, scale: 2 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-circle.png"
-    />
-    <img
-      v-motion
-      :initial="{ x: 600, y: 400, scale: 2, rotate: 100 }"
-      :enter="final"
-      class="absolute top-0 left-0 right-0 bottom-0"
-      src="https://sli.dev/logo-triangle.png"
-    />
-  </div>
-
-  <div 
-    class="text-5xl absolute top-14 left-40 text-[#2B90B6] -z-1"
-    v-motion
-    :initial="{ x: -80, opacity: 0}"
-    :enter="{ x: 0, opacity: 1, transition: { delay: 2000, duration: 1000 } }">
-    Slidev
-  </div>
+- Visit next.vuetifyjs.com
+- Vue CLI 
+  - **vue add vuetify** > **Vue 3** > **V3(alpha)**
+- Vuetify ESLint Plugin
+- Inside Terminal **vue create my-app -p vuetifyjs/preset**
 </div>
 
-<!-- vue script setup scripts can be directly used in markdown, and will only affects current page -->
-<script setup lang="ts">
-const final = {
-  x: 0,
-  y: 0,
-  rotate: 0,
-  scale: 1,
-  transition: {
-    type: 'spring',
-    damping: 10,
-    stiffness: 20,
-    mass: 2
-  }
-}
-</script>
+<div>
 
-<div 
-  v-motion
-  :initial="{ x:35, y: 40, opacity: 0}"
-  :enter="{ y: 0, opacity: 1, transition: { delay: 3500 } }">
-  
-[Learn More](https://sli.dev/guide/animations.html#motion)
+<img src="src/assets/vuetifyjs_website.png">
+
+</div>
 
 </div>
 
 ---
 
-# LaTeX
+# Let's connect
 
-LaTeX is supported out-of-box powered by [KaTeX](https://katex.org/).
+<div grid="~ cols-2">
+<div>
 
-<br>
-
-Inline $\sqrt{3x-1}+(1+x)^2$
-
-Block
-$$
-\begin{array}{c}
-
-\nabla \times \vec{\mathbf{B}} -\, \frac1c\, \frac{\partial\vec{\mathbf{E}}}{\partial t} &
-= \frac{4\pi}{c}\vec{\mathbf{j}}    \nabla \cdot \vec{\mathbf{E}} & = 4 \pi \rho \\
-
-\nabla \times \vec{\mathbf{E}}\, +\, \frac1c\, \frac{\partial\vec{\mathbf{B}}}{\partial t} & = \vec{\mathbf{0}} \\
-
-\nabla \cdot \vec{\mathbf{B}} & = 0
-
-\end{array}
-$$
-
-<br>
-
-[Learn more](https://sli.dev/guide/syntax#latex)
-
----
-
-# Diagrams
-
-You can create diagrams / graphs from textual descriptions, directly in your Markdown.
-
-<div class="grid grid-cols-2 gap-4 pt-4 -mb-6">
-
-```mermaid {scale: 0.9}
-sequenceDiagram
-    Alice->John: Hello John, how are you?
-    Note over Alice,John: A typical interaction
-```
-
-```mermaid {theme: 'neutral', scale: 0.8}
-graph TD
-B[Text] --> C{Decision}
-C -->|One| D[Result 1]
-C -->|Two| E[Result 2]
-```
+- Twitter: @tweetmonster999
+- LinkedIn: https://bit.ly/3hS2Dn6
+- Github: BboyAkers
 
 </div>
+<div>
 
-[Learn More](https://sli.dev/guide/syntax.html#diagrams)
+<img src="https://media.giphy.com/media/xTk9ZY0C9ZWM2NgmCA/giphy.gif">
 
+</div>
+</div>
 
 ---
-layout: center
-class: text-center
----
 
-# Learn More
-
-[Documentations](https://sli.dev) / [GitHub Repo](https://github.com/slidevjs/slidev)
