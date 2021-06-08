@@ -25,54 +25,44 @@ The last comment block of each slide will be treated as slide notes. It will be 
 -->
 
 ---
+layout: image-right
+image: https://source.unsplash.com/collection/94734566/1920x1080
+---
+
 
 # Overview
-<div grid="~ cols-2 gap-2" m="-t-2">
-
-<div>
 
 - 📝 **Summary of Vuetify?**
 - 🛠 **Vuetiful Updates**
 - 🧑‍💻 **Upgrading to v3**
 
-</div>
+---
 
-<div>
-
-<img src="src/assets/undraw_list.png" />
-
-</div>
-
-</div>
+<img src="https://media.giphy.com/media/l0IyjiXOXTX6Yemsg/giphy.gif" style="margin: 60px auto;">
 
 ---
 
-# Let us Begin!
+# Overview of Vuetify
 
----
-
-# Summary of Vuetify?
-
-<div grid="~ cols-3 gap-2" m="-t-2">
+<div grid="~ cols-2 gap-2" m="-t-2">
 
 <div>
-UI Framework
+
+- UI Framework
+- Material Design
+- Quick to Learn
+
+<!-- <img src="src/assets/btn_size.png" /> -->
+
+</div>
+
+<div>
 
 <img src="src/assets/floating_icons.png" />
-<img src="src/assets/btn_size.png" />
 
-</div>
+<img src="src/assets/material-design.png" style="height: 250px;" />
+<!-- <img src="src/assets/arrow_going_up.png" style="height: 130px; margin-top: 75px;" /> -->
 
-<div>
-Material Design
-
-<img src="src/assets/material-design.png" style="height: 200px;" />
-</div>
-
-<div>
-Quick to Learn
-
-<img src="src/assets/arrow_going_up.png" style="height: 130px; margin-top: 75px;" />
 </div>
 
 </div>
@@ -80,11 +70,14 @@ Quick to Learn
  img {
    margin-top: 25px;
  }
+ ul{
+   font-size: 1.2em;
+ }
 </style>
 
 ---
 layout: image-right
-image: vuetify_logo.png
+image: src/assets/vuetify_logo.png
 ---
 
 # Vuetiful Updates
@@ -105,7 +98,7 @@ image: vuetify_logo.png
 
 Option One
 
-```html
+```html{all|4|5|6|7-9|all}
 <v-card
   density="comfortable"
   elevation="6"
@@ -144,7 +137,7 @@ Option One
 
 Option Two
 
-```html
+```html{all|6-12|7|8-11|9|10|14-18|all}
 <v-card 
   density="comfortable"
   elevation="6"
@@ -181,6 +174,8 @@ Option Two
 </div>
 ---
 
+
+
 # Component Declaration
 
 
@@ -190,7 +185,7 @@ Option Two
 
 Option Three
 
-```html
+```html{all|5-14|5|7|9|10-14|all}
 <v-card 
   density="comfortable"
   elevation="6"
@@ -231,14 +226,15 @@ Option Three
 
 
 ```js
-import { ar, en } from 'vuetify/src/locale';
+import { mdi, aliases } from '';
 export default createVuetify({
-  locale: {
-    messages: {
-      en,
-      ar,
-    }
-  },
+  icons: {
+    defaultSet: 'fa',
+    aliases,
+    sets: {
+      fa,
+      mdi,
+    },
 })
 ```
 
@@ -261,7 +257,7 @@ export default createVuetify({
 
 - Importing and declaration
 - Easier to use custom icons
-- test
+- Set default icon sets
 
 <img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" style="height: 150px;">
 
