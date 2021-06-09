@@ -96,7 +96,7 @@ image: src/assets/vuetify_logo.png
 
 <div>
 
-Option One
+Interface Approach
 
 ```html
 <v-card
@@ -110,9 +110,33 @@ Option One
 ```
 
 </div>
+
+
 <div>
 
-Option Two
+Slot Approach
+
+```html
+<v-card 
+  density="comfortable"
+  elevation="6"
+>
+  <v-card-avatar image="...." />
+
+  <template #title>....</template>
+
+  <template #subtitle>....</template>
+
+  <template #text>....</template>
+
+</v-card>
+```
+
+</div>
+
+<div>
+
+Verbose Approach
 
 ```html
 <v-card 
@@ -139,28 +163,6 @@ Option Two
 ```
 
 </div>
-
-<div>
-
-Option Three
-
-```html
-<v-card 
-  density="comfortable"
-  elevation="6"
->
-  <v-card-avatar image="...." />
-
-  <template #title>....</template>
-
-  <template #subtitle>....</template>
-
-  <template #text>....</template>
-
-</v-card>
-```
-
-</div>
 </div>
 
 ---
@@ -171,7 +173,7 @@ Option Three
 
 <div>
 
-Option One
+Interface Approach
 
 ```html{all|4|5|6|7-9|all}
 <v-card
@@ -197,7 +199,6 @@ Option One
 - Iteration on simple cards
 </div>
 
-
 </div>
 
 ---
@@ -210,7 +211,51 @@ Option One
 
 <div>
 
-Option Two
+Slot Approach
+
+```html{all|5-14|5|7|9|10-15|all}
+<v-card 
+  density="comfortable"
+  elevation="6"
+>
+  <v-card-avatar image="src/assets/vuetify_github_card.png" />
+
+  <template #title>BboyAkers</template>
+
+  <template #subtitle>Software Engineer</template>
+
+  <template #text>
+    I enjoy frontend development. Outside of work 
+    I contribute to MetaMask, Vuetify, and 
+    freeCodeCamp Dallas.
+  </template>
+
+</v-card>
+```
+</div>
+
+<div>
+
+<img src="src/assets/vuetify_github_card.png" style="height: 150px; margin-top: 75px;">
+
+- Great median
+- Concise 
+- Not sacrificing versatility
+
+</div>
+</div>
+---
+
+
+
+# Component Declaration
+
+
+<div grid="~ cols-2 gap-2" m="-t-2">
+
+<div>
+
+Verbose Approach
 
 ```html{all|6-12|7|8-11|9|10|14-18|all}
 <v-card 
@@ -249,51 +294,6 @@ Option Two
 </div>
 ---
 
-
-
-# Component Declaration
-
-
-<div grid="~ cols-2 gap-2" m="-t-2">
-
-<div>
-
-Option Three
-
-```html{all|5-14|5|7|9|10-15|all}
-<v-card 
-  density="comfortable"
-  elevation="6"
->
-  <v-card-avatar image="src/assets/vuetify_github_card.png" />
-
-  <template #title>BboyAkers</template>
-
-  <template #subtitle>Software Engineer</template>
-
-  <template #text>
-    I enjoy frontend development. Outside of work 
-    I contribute to MetaMask, Vuetify, and 
-    freeCodeCamp Dallas.
-  </template>
-
-</v-card>
-```
-</div>
-
-<div>
-
-<img src="src/assets/vuetify_github_card.png" style="height: 150px; margin-top: 75px;">
-
-- Great median
-- More concise than 'Option two'
-- Not sacrificing versatility compared to 'Option one'
-
-</div>
-
-</div>
----
-
 # Custom Icons
 
 
@@ -301,8 +301,9 @@ Option Three
 <div>
 
 
-```js
-import { mdi, aliases } from '';
+```js{all|4|7-10|all}
+import { mdi, aliases } from '...';
+import { fa } from '...';
 export default createVuetify({
   icons: {
     defaultSet: 'fa',
@@ -314,7 +315,7 @@ export default createVuetify({
 })
 ```
 
-```html
+```html{all|4|5|6|all}
 <template>
   <v-app>
     <div class="ma-12 pa-12">
@@ -331,9 +332,9 @@ export default createVuetify({
 </div>
 <div>
 
-- Importing and declaration
+- Standardized multiple icon font library use
+- Official interface for custom icons
 - Easier to use custom icons
-- Set default icon sets
 
 <img border="rounded" src="src/assets/fontawesome_icons.png" style="height: 300px;">
 
@@ -370,8 +371,12 @@ export default createVuetify({
 </div>
 </div>
 
-- Auto Right to Left(RTL) support
+- Auto Internalization support
 - Various languages already supported
+
+<!--
+There is a locale provider which infers the default direction based upon the language.
+-->
 
 ---
 
@@ -458,6 +463,9 @@ export default createVuetify({
 
 </div>
 
+<!--
+Global Defaults are an easier to way to you to implement your own design system. In addition to the default props, you can still modify Sass variables as well. Density alters the vertical space that a component takes up.
+-->
 
 ---
 
@@ -471,7 +479,8 @@ export default createVuetify({
 - Vue CLI 
   - **vue add vuetify** > **Vue 3** > **V3(alpha)**
 - Vuetify ESLint Plugin
-- Inside Terminal **vue create my-app -p vuetifyjs/preset**
+- Inside Terminal 
+  - **vue create my-app -p vuetifyjs/preset**
 </div>
 
 <div>
@@ -481,6 +490,12 @@ export default createVuetify({
 </div>
 
 </div>
+
+<!--
+Vuetify ESLint Plugin is what has been used in the past for aiding upgrading. Vuetify V3 is still in alpha but in the future this will be used. 
+
+Inside Terminal: This is a preset environment for you to test out the new version of Vuetify.
+-->
 
 ---
 
@@ -502,4 +517,3 @@ export default createVuetify({
 </div>
 
 ---
-
