@@ -32,7 +32,7 @@ image: https://source.unsplash.com/collection/94734566/1920x1080
 
 # Overview
 
-- 📝 **Summary of Vuetify?**
+- 📝 **Summary of Vuetify**
 - 🛠 **Vuetiful Updates**
 - 🧑‍💻 **Upgrading to v3**
 
@@ -48,7 +48,7 @@ image: https://source.unsplash.com/collection/94734566/1920x1080
 
 <div>
 
-- UI Framework
+- UI Library
 - Material Design
 - Quick to Learn
 
@@ -85,8 +85,83 @@ image: src/assets/vuetify_logo.png
 - Component Declaration
 - Custom Icons
 - Localization
-- Theme
+- Themes
 - Global Configuration
+
+---
+
+# Component Declaration
+
+<div grid="~ cols-3 gap-4">
+
+<div>
+
+Option One
+
+```html
+<v-card
+  density="comfortable"
+  elevation="6"
+  prepend-avatar="...."
+  title="...."
+  subtitle="...."
+  text="...."
+/>
+```
+
+</div>
+<div>
+
+Option Two
+
+```html
+<v-card 
+  density="comfortable"
+  elevation="6"
+>
+<v-card-item>
+  <v-card-header>
+    <v-card-avatar image="...." />
+    <v-card-header-text>
+      <v-card-title>
+        ....
+      </v-card-title>
+      <v-card-subtitle>
+        ....
+      </v-card-subtitle>
+    </v-card-header-text>
+  </v-card-header>
+  <v-card-text>
+    ....
+  </v-card-text>
+</v-card-item>
+</v-card>
+```
+
+</div>
+
+<div>
+
+Option Three
+
+```html
+<v-card 
+  density="comfortable"
+  elevation="6"
+>
+  <v-card-avatar image="...." />
+
+  <template #title>....</template>
+
+  <template #subtitle>....</template>
+
+  <template #text>....</template>
+
+</v-card>
+```
+
+</div>
+</div>
 
 ---
 
@@ -185,7 +260,7 @@ Option Two
 
 Option Three
 
-```html{all|5-14|5|7|9|10-14|all}
+```html{all|5-14|5|7|9|10-15|all}
 <v-card 
   density="comfortable"
   elevation="6"
@@ -198,7 +273,8 @@ Option Three
 
   <template #text>
     I enjoy frontend development. Outside of work 
-    I contribute to MetaMask, Vuetify, and freeCodeCamp Dallas.
+    I contribute to MetaMask, Vuetify, and 
+    freeCodeCamp Dallas.
   </template>
 
 </v-card>
@@ -210,8 +286,8 @@ Option Three
 <img src="src/assets/vuetify_github_card.png" style="height: 150px; margin-top: 75px;">
 
 - Great median
-- More concise than 'Option Two'
-- Not sacrificing versatility compared to 'Option One'
+- More concise than 'Option two'
+- Not sacrificing versatility compared to 'Option one'
 
 </div>
 
@@ -242,7 +318,7 @@ export default createVuetify({
 <template>
   <v-app>
     <div class="ma-12 pa-12">
-      <v-icon icon="mdi-vuetify" />
+      <v-icon icon="mdi:vuetify" />
       <v-icon icon="fa:circle-outline" />
       <v-icon icon="vuetify" />
     </div>
@@ -259,7 +335,7 @@ export default createVuetify({
 - Easier to use custom icons
 - Set default icon sets
 
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true" style="height: 150px;">
+<img border="rounded" src="src/assets/fontawesome_icons.png" style="height: 300px;">
 
 
 
@@ -275,7 +351,7 @@ export default createVuetify({
 <div>
 
 ```js
-import { ar, en } from 'vuetify/src/locale';
+import { ar, en } from 'vuetify/lib/locale';
 export default createVuetify({
   locale: {
     messages: {
@@ -289,28 +365,30 @@ export default createVuetify({
 </div>
 <div>
 
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true">
+<img border="rounded" src="src/assets/localization_cards.png">
 
 </div>
 </div>
 
-- Auto right to Left(RTL) support
-- Using vue-i18n
+- Auto Right to Left(RTL) support
+- Various languages already supported
 
 ---
 
-# Theme
-### Inject Themes inside our current theme
+# Themes
+
+Inject Themes inside our current theme
 <div grid="~ cols-2 gap-4">
 
 <div>
 
-```html{all|2|2-12|13-20|all}
+```html{all|2|2-13|14-22|all}
 <v-container>
   <v-theme-provider theme="dark">
     <v-card>
       <v-card-text>
-        Injected Dark Theme Card
+        I enjoy frontend development. Outside of work 
+        I contribute to MetaMask, Vuetify, and freeCodeCamp Dallas.
       </v-card-text>
 
       <v-card-actions>
@@ -320,7 +398,8 @@ export default createVuetify({
   </v-theme-provider>
   <v-card>
     <v-card-text>
-     Default Card Theme
+      I enjoy frontend development. Outside of work 
+      I contribute to MetaMask, Vuetify, and freeCodeCamp Dallas.
     </v-card-text>
     <v-card-actions>
       <v-btn color="primary">Github</v-btn>
@@ -347,8 +426,9 @@ export default createVuetify({
 
 <div grid="~ cols-2 gap-2" m="-t-2">
 
-```js
+<div>
 
+```js{all|3-5|6-8|9-11|all}
 export default createVuetify({
   defaults: {
     global: {
@@ -365,14 +445,23 @@ export default createVuetify({
 
 ```
 
-<img border="rounded" src="https://github.com/slidevjs/themes/blob/main/screenshots/theme-seriph/01.png?raw=true">
+- Easier global configurations
+- Useful for basic design system
+- More control & less work
+</div>
+
+<div>
+
+<img border="rounded" src="src/assets/vuetify_website.png">
+
+</div>
 
 </div>
 
 
 ---
 
-# Upgrade/Testing?
+# Upgrading/Testing?
 
 <div grid="~ cols-2 gap-2" m="-t-2">
 
