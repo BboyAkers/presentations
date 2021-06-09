@@ -285,8 +285,8 @@ Verbose Approach
 
 <img src="src/assets/vuetify_github_card.png" style="height: 150px; margin-top: 75px;">
 
+- Descriptive
 - Most Common
-- More descriptive
 - More customization
 
 </div>
@@ -515,5 +515,3 @@ Inside Terminal: This is a preset environment for you to test out the new versio
 
 </div>
 </div>
-
----
