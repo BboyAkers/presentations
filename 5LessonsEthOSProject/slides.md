@@ -40,16 +40,25 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 
 ---
-
+<!--picture journey for How it began  -->
+---
 # How it began
 
 <div grid="~ cols-2 gap-2" m="-t-2">
 
 <div>
 
+  <img src="/truffle-logo.png" style="height: 100px" alt="truffle logo" />
+
 - Truffle Con 2019
+
+<img src="/metamask-logo.png" style="height: 100px" alt="metamask logo">
+
 - What would it be?
+<img src="/documentation-icon.png" style="height: 100px" alt="documenation icon">
+
 - Documentation
+
 - I'll do it
 - New Documentation Prototype
 
@@ -58,7 +67,7 @@ The last comment block of each slide will be treated as slide notes. It will be 
 
 <div>
 
-MM
+
 
 </div>
 
@@ -79,15 +88,22 @@ image: https://source.unsplash.com/collection/94734566/1920x1080
 
 # Lesson 1
 
-Contributing isn't just code.
-- Review Pull Requests
-- Review Issues
-- Read Tag Issues
-- Project Manage
-- Stay on top of trends
-- Reflect in the documentation
+<!-- X's on things coding related and check on things that is more non-technical -->
+Contributing
+
+Contributing isn't just:
+- Writing code
+- Reviewing Pull Requests
+- Reviewing Issues
+
+It's also:
+- ✅ Project Management(tagging issues)
+- ✅ Stay on top of trends
+- ✅ Reflect in the documentation
 
 
+---
+<!-- How is it 50% of the product not why -->
 ---
 
 # Lesson 2
@@ -100,7 +116,7 @@ Treating documentation like the other 50% of the product/tool
 
 - Gateway to your product
 - Audit existing documentation
-- Defining a structure
+<!-- - Defining a structure -->
 
 
 </div>
@@ -116,25 +132,25 @@ Treating documentation like the other 50% of the product/tool
 
 # Lesson 3
 
-Understanding there are more than 2 types of themes documentation
+Understanding there are more than 2 key focuses in documentation
 
-- Tutorials and References
-
-- What is documentation?
-
-- Tutorials
-- How-To Guides
-- Explanations
-- References
 
 <div grid="~ cols-2 gap-4">
 <div>
 
+What I thought was:
+- Tutorials
+- References
 
 
 </div>
 <div>
 
+What it actually is:
+- Tutorials
+- How-To Guides
+- Explanations
+- References
 
 </div>
 </div>
@@ -145,12 +161,11 @@ Understanding there are more than 2 types of themes documentation
 
 # Lesson 4
 
-Write with Empathy
+Write with Inclusivity in mind
 
-- Close Knowledge Gap
-- Not Assuming
-- Inclusive and Effective
-- User Research
+- Aim to close the knowledge gap
+- Don't Assume everyone knows
+- Actively undergo User Research
 
 <div grid="~ cols-2 gap-4">
 <div>
@@ -172,10 +187,9 @@ Write with Empathy
 
 Re-learning how to taking feedback the Open Source way.
 
-- 80% fantastic
-- 20% not too bueno
-- GitHub Issues
-- Talking Directly with the community
+- Working with people
+- Feedback received via GitHub Issues
+- Allows me to connect in a different way
 
 
 <div grid="~ cols-2 gap-4">
@@ -202,6 +216,9 @@ Tiring: Yes
 Lose Motivation: Yes
 Constantly Learning: Yes
 Rewarding: YES
+
+Bonus Lesson:
+Work on a project you're passionate about
 
 ---
 ---
