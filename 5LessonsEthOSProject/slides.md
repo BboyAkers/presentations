@@ -44,32 +44,29 @@ The last comment block of each slide will be treated as slide notes. It will be 
 ---
 # How it began
 
-<div grid="~ cols-2 gap-2" m="-t-2">
+<br>
+<br>
+<br>
+<div grid="~ cols-3 gap-2" m="-t-2">
 
-<div>
-
-  <img src="/truffle-logo.png" style="height: 100px" alt="truffle logo" />
-
-- Truffle Con 2019
-
-<img src="/metamask-logo.png" style="height: 100px" alt="metamask logo">
-
-- What would it be?
-<img src="/documentation-icon.png" style="height: 100px" alt="documenation icon">
-
-- Documentation
-
-- I'll do it
-- New Documentation Prototype
-
-
+<div v-click="1">
+<img src="/truffle-logo.png" style="height: 150px" alt="truffle logo" />
+<br>
+Truffle Con 2019
 </div>
 
-<div>
-
-
-
+<div v-click="2">
+<img src="/metamask-logo.png" style="height: 150px" alt="metamask logo">
+<br>
+What would it be?
 </div>
+
+<div v-click="3" class="text-center">
+<img src="/MMDocsProto.png" alt="MetaMask Documentation Page Screenshot">
+<br>
+Documentation Prototype
+</div>
+
 
 </div>
 
@@ -82,50 +79,106 @@ class: text-center
 # 5 Lessons Learned
 
 ---
-layout: image-right
-image: https://source.unsplash.com/collection/94734566/1920x1080
 ---
 
 # Lesson 1
 
-<!-- X's on things coding related and check on things that is more non-technical -->
-Contributing
-
-Contributing isn't just:
-- Writing code
-- Reviewing Pull Requests
-- Reviewing Issues
-
-It's also:
-- ✅ Project Management(tagging issues)
-- ✅ Stay on top of trends
-- ✅ Reflect in the documentation
-
-
----
-<!-- How is it 50% of the product not why -->
----
-
-# Lesson 2
-
+Being okay with saying "I don't know....yet"
 
 <div grid="~ cols-2 gap-4">
 <div>
 
-Treating documentation like the other 50% of the product/tool
+<div v-click="1">
 
-- Gateway to your product
-- Audit existing documentation
-<!-- - Defining a structure -->
-
+<!-- - EIP-3091 for `@metamask/etherscan-link` -->
+- Why and How?
 
 </div>
+
+<div v-click="2">
+
+- Dig into one bit of relevant code
+
+</div>
+
+<div v-click="3">
+
+- Venture into the dependency tree
+
+</div>
+
+</div>
+
+
 <div>
 
+<div v-click="2">
+
+<img src="/1st-issue.png">
 
 </div>
+
+<br>
+<br>
+<br>
+
+<div v-click="3">
+
+### `@metamask/etherscan-link`
+
 </div>
 
+</div>
+
+</div>
+
+
+---
+layout: image-right
+image: ./issues-screenshot.png
+---
+
+# Lesson 2
+
+<!-- X's on things coding related and check on things that is more non-technical -->
+<!-- Contributing -->
+
+<!-- Contributing isn't just:
+- Writing code
+- Merging Pull Requests -->
+
+Contributing isn't just:
+<div v-click="1">
+
+- Design
+
+</div>
+
+
+<div v-click="2">
+
+- Tagging issues
+
+</div>
+
+
+<div v-click="3">
+
+- Reviewing pull requests
+
+</div>
+
+<div v-click="4">
+
+- Holding discussions
+
+</div>
+
+<div v-click="5">
+
+- Project mangement
+
+</div>
 
 ---
 ---
@@ -139,18 +192,26 @@ Understanding there are more than 2 key focuses in documentation
 <div>
 
 What I thought was:
-- Tutorials
-- References
+<div v-click="1">
 
+- Tutorials
 
 </div>
-<div>
+
+- Reference Material
 
 What it actually is:
 - Tutorials
 - How-To Guides
 - Explanations
-- References
+- Reference Material
+
+</div>
+<div>
+
+
+
+<img src="/diataxis-graph.png" alt="">
 
 </div>
 </div>
@@ -161,15 +222,14 @@ What it actually is:
 
 # Lesson 4
 
-Write with Inclusivity in mind
-
-- Aim to close the knowledge gap
-- Don't Assume everyone knows
-- Actively undergo User Research
+Write with inclusivity in mind
 
 <div grid="~ cols-2 gap-4">
 <div>
 
+- Aim to close the knowledge gap
+- Don't assume everyone knows
+- Actively undergo user research
 
 
 </div>
