@@ -8,24 +8,19 @@ background: https://source.unsplash.com/collection/94734566/1920x1080
 class: 'text-center'
 # https://sli.dev/custom/highlighters.html
 highlighter: shiki
-# show line numbers in code blocks
-lineNumbers: false
 # some information about the slides, markdown enabled
 info: |
   ## Slidev Starter Template
   Presentation slides for developers.
-
+  
   Learn more at [Sli.dev](https://sli.dev)
-# persist drawings in exports and build
-drawings:
-  persist: false
 ---
 
 ## 5 Lessons Learned Contributing to an <br> Ethereum Open Source Project
 
 By: Austin Akers
 
-
+---
 ---
 
 # Overview
@@ -35,8 +30,6 @@ By: Austin Akers
 - 📝 **QA** - Don't be shy!
 
 
-
----
 ---
 
 # How it began
@@ -74,7 +67,6 @@ class: text-center
 
 # 5 Lessons Learned
 
----
 ---
 
 # Lesson 1
@@ -129,122 +121,133 @@ Being okay with saying "I don't know....yet"
 </div>
 
 ---
+layout: image-right
+image: ./issues-screenshot.png
 ---
 
 # Lesson 2
 
- Treating documentation like the other 50%
-<div grid="~ cols-2 gap-4">
-<div>
+<!-- X's on things coding related and check on things that is more non-technical -->
+<!-- Contributing -->
 
+<!-- Contributing isn't just:
+- Writing code
+- Merging Pull Requests -->
+
+Contributing isn't just:
 <div v-click="1">
 
-- Gateway to your product
-
-</div>
-<div v-click="2">
-
-- Audit existing documentation
-
-</div>
-<div v-click="3">
-
-- Defining a structure
-
-</div>
-
-</div>
-<div>
-
-<img src="/MMDocsProto.png">
-
-</div>
-</div>
-
-
-
----
----
-
-# Lesson 3
-
-
-Understanding there are more than 2 types of themes documentation
-
-
-
-<div grid="~ cols-2 gap-4">
-
-<div>
-
-
-- Tutorials
-- References
-
-<div v-click="1">
-
-#### What is documentation?
+- Design
 
 </div>
 
 
 <div v-click="2">
 
-- Tutorials
+- Tagging issues
 
 </div>
+
+
 <div v-click="3">
 
-- How-To Guides
+- Reviewing pull requests
 
 </div>
+
 <div v-click="4">
 
-- Explanations
+- Holding discussions
+
+</div>
+
+<div v-click="5">
+
+- Project mangement
 
 </div>
 <div v-click="5">
 
-- References
+- Writing Documentation
 
 </div>
-
-</div>
-
-<div>
-
-<div v-click="2">
-
-<img src="/diataxis-graph.png" alt="">
-<div class="text-right">
-<small><i>Credit: https://diataxis.fr/</i></small>
-
-</div>
-</div>
-</div>
-
-</div>
-
-
-
-
 
 ---
----
-
-# Lesson 4
 
 
-Write with Empathy
+# Lesson 3
 
-- Close Knowledge Gap
-- Not Assuming
-- Inclusive and Effective
-- User Research
+Understanding there are more than 2 key parts in documentation
+
 
 <div grid="~ cols-2 gap-4">
 <div>
 
+What I thought was:
+<div v-click="1">
+
+- Tutorials
+
+</div>
+<div v-click="2">
+
+- Reference Material
+
+</div>
+
+<div v-clickd="3">
+
+What it actually is:
+
+</div>
+
+<div v-click="4">'
+
+- Tutorials
+
+</div>
+
+<div v-click="5">
+
+- How-To Guides
+
+</div>
+
+<div v-click="6">
+
+- Explanations
+
+</div>
+
+<div v-click="7">
+
+- Reference Material
+
+</div>
+
+</div>
+<div>
+
+
+
+<img src="/diataxis-graph.png" alt="">
+
+</div>
+</div>
+
+---
+
+
+# Lesson 4
+
+Write with inclusivity in mind
+
+<div grid="~ cols-2 gap-4">
+<div>
+
+- Aim to close the knowledge gap
+- Don't assume everyone knows
+- Actively undergo user research
 
 
 </div>
@@ -255,33 +258,14 @@ Write with Empathy
 </div>
 
 ---
----
 
 # Lesson 5
 
-
 Re-learning how to taking feedback the Open Source way.
 
-<div v-click="1">
-
-- 80% fantastic
-
-</div>
-<div v-click="2">
-
-- 20% not too bueno
-
-</div>
-<div v-click="3">
-
-- GitHub Issues
-
-</div>
-<div v-click="4">
-
-- Talking Directly with the community
-
-</div>
+- Working with people
+- Feedback received via GitHub Issues
+- Allows me to connect in a different way
 
 
 <div grid="~ cols-2 gap-4">
@@ -298,36 +282,19 @@ Re-learning how to taking feedback the Open Source way.
 
 ---
 layout: center
-class: "text-center"
+class: text-center
 ---
 
 # Great!
-<div v-click="1">
 
-#### Tiring: Yes
-
-</div>
-<div v-click="2">
-
-#### Lose Motivation: Yes
-
-</div>
-<div v-click="3">
-
-#### Constantly Learning: Yes
-
-</div>
-<div v-click="4">
-
-#### Rewarding: YES
-
-</div>
-<div v-click="5">
+Tiring: Yes
+Lose Motivation: Yes
+Constantly Learning: Yes
+Rewarding: YES
 
 Bonus Lesson:
 Work on a project you're passionate about
 
-</div>
 ---
 
 # Connect

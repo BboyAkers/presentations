@@ -21,10 +21,9 @@ drawings:
   persist: false
 ---
 
-## 5 Lessons Learned Contributing to an <br> Ethereum Open Source Project
+## 5 Lessons Learned Contributing to an <br> Open Source Project for 
 
 By: Austin Akers
-
 
 ---
 
@@ -36,9 +35,8 @@ By: Austin Akers
 
 
 
----
----
 
+---
 # How it began
 
 <br>
@@ -67,6 +65,7 @@ Documentation Prototype
 
 </div>
 
+
 ---
 layout: center
 class: text-center
@@ -74,7 +73,7 @@ class: text-center
 
 # 5 Lessons Learned
 
----
+
 ---
 
 # Lesson 1
@@ -128,123 +127,134 @@ Being okay with saying "I don't know....yet"
 
 </div>
 
+
 ---
+layout: image-right
+image: ./issues-screenshot.png
 ---
 
 # Lesson 2
 
- Treating documentation like the other 50%
-<div grid="~ cols-2 gap-4">
-<div>
+<!-- X's on things coding related and check on things that is more non-technical -->
+<!-- Contributing -->
 
+<!-- Contributing isn't just:
+- Writing code
+- Merging Pull Requests -->
+
+Contributing isn't just:
 <div v-click="1">
 
-- Gateway to your product
+- Design
 
 </div>
+
+
 <div v-click="2">
 
-- Audit existing documentation
+- Tagging issues
 
 </div>
+
+
 <div v-click="3">
 
-- Defining a structure
+- Reviewing pull requests
 
 </div>
 
-</div>
-<div>
+<div v-click="4">
 
-<img src="/MMDocsProto.png">
+- Holding discussions
 
-</div>
 </div>
 
+<div v-click="5">
 
+- Project mangement
 
----
+</div>
+<div v-click="5">
+
+- Writing Documentation
+
+</div>
+
 ---
 
 # Lesson 3
 
-
-Understanding there are more than 2 types of themes documentation
-
+Understanding there are more than 2 key parts in documentation
 
 
 <div grid="~ cols-2 gap-4">
-
 <div>
 
-
-- Tutorials
-- References
-
+What I thought was:
 <div v-click="1">
 
-#### What is documentation?
+- Tutorials
+
+</div>
+<div v-click="2">
+
+- Reference Material
 
 </div>
 
+<div v-click="3">
 
-<div v-click="2">
+What it actually is:
+
+</div>
+
+<div v-click="4">'
 
 - Tutorials
 
 </div>
-<div v-click="3">
+
+<div v-click="5">
 
 - How-To Guides
 
 </div>
-<div v-click="4">
+
+<div v-click="6">
 
 - Explanations
 
 </div>
-<div v-click="5">
 
-- References
+<div v-click="7">
+
+- Reference Material
 
 </div>
 
 </div>
-
 <div>
 
-<div v-click="2">
+
 
 <img src="/diataxis-graph.png" alt="">
-<div class="text-right">
-<small><i>Credit: https://diataxis.fr/</i></small>
 
 </div>
 </div>
-</div>
-
-</div>
 
 
-
-
-
----
 ---
 
 # Lesson 4
 
-
-Write with Empathy
-
-- Close Knowledge Gap
-- Not Assuming
-- Inclusive and Effective
-- User Research
+Write with inclusivity in mind
 
 <div grid="~ cols-2 gap-4">
 <div>
 
+- Aim to close the knowledge gap
+- Don't assume everyone knows
+- Actively undergo user research
 
 
 </div>
@@ -254,34 +264,16 @@ Write with Empathy
 </div>
 </div>
 
----
+
 ---
 
 # Lesson 5
 
-
 Re-learning how to taking feedback the Open Source way.
 
-<div v-click="1">
-
-- 80% fantastic
-
-</div>
-<div v-click="2">
-
-- 20% not too bueno
-
-</div>
-<div v-click="3">
-
-- GitHub Issues
-
-</div>
-<div v-click="4">
-
-- Talking Directly with the community
-
-</div>
+- Working with people
+- Feedback received via GitHub Issues
+- Allows me to connect in a different way
 
 
 <div grid="~ cols-2 gap-4">
@@ -296,38 +288,23 @@ Re-learning how to taking feedback the Open Source way.
 </div>
 </div>
 
+
 ---
 layout: center
-class: "text-center"
+class: text-center
 ---
 
 # Great!
-<div v-click="1">
 
-#### Tiring: Yes
-
-</div>
-<div v-click="2">
-
-#### Lose Motivation: Yes
-
-</div>
-<div v-click="3">
-
-#### Constantly Learning: Yes
-
-</div>
-<div v-click="4">
-
-#### Rewarding: YES
-
-</div>
-<div v-click="5">
+Tiring: Yes
+Lose Motivation: Yes
+Constantly Learning: Yes
+Rewarding: YES
 
 Bonus Lesson:
 Work on a project you're passionate about
 
-</div>
+
 ---
 
 # Connect
