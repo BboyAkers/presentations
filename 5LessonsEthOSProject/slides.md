@@ -30,12 +30,28 @@ By: Austin Akers
 
 # Overview
 
+<div v-click="1">
+
 - 🧑‍💻 **Background** - How I started contributing.
+
+</div>
+
+<div v-click="2">
+
 - 📝 **5 Lessons** - What I learned.
+
+</div>
+
+<div v-click="3">
+
 - 📝 **QA** - Don't be shy!
 
+</div>
+<div v-click="4">
 
+<iframe src="https://giphy.com/embed/MRH15ebBQboUMedyks" width="480" height="480" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/foxhomeent-MRH15ebBQboUMedyks">via GIPHY</a></p>
 
+</div>
 ---
 ---
 
@@ -164,12 +180,11 @@ Being okay with saying "I don't know....yet"
 
 
 ---
----
 
 # Lesson 3
 
 
-Understanding there are more than 2 types of themes documentation
+Understanding there are more than 2 types of themes in documentation
 
 
 
@@ -177,33 +192,39 @@ Understanding there are more than 2 types of themes documentation
 
 <div>
 
+<div v-click="1">
 
 - Tutorials
+
+</div>
+<div v-click="2">
+
 - References
 
-<div v-click="1">
+</div>
+<div v-click="3">
 
 #### What is documentation?
 
 </div>
 
 
-<div v-click="2">
+<div v-click="4">
 
 - Tutorials
 
 </div>
-<div v-click="3">
+<div v-click="5">
 
 - How-To Guides
 
 </div>
-<div v-click="4">
+<div v-click="6">
 
 - Explanations
 
 </div>
-<div v-click="5">
+<div v-click="7">
 
 - References
 
@@ -213,11 +234,11 @@ Understanding there are more than 2 types of themes documentation
 
 <div>
 
-<div v-click="2">
+<div v-click="4">
 
 <img src="/diataxis-graph.png" alt="">
 <div class="text-right">
-<small><i>Credit: https://diataxis.fr/</i></small>
+<small><i>Credit:Daniele Procida https://diataxis.fr/</i></small>
 
 </div>
 </div>
@@ -225,9 +246,14 @@ Understanding there are more than 2 types of themes documentation
 
 </div>
 
+<!--
+- Tutorials are lessons that take the reader by the hand through a series of steps to complete a project of some kind. Learning-oriented. 
+- How-to guides are directions that take the reader through the steps required to solve a real-world problem. Goal-oriented. 
+- Reference Guides are Technical descriptions of the machinery and how to operate it. Information-oriented. 
+- Explanation is discussion that clarifies and illuminates a particular topic. Understanding-oriented.
 
-
-
+- Examples: Django, Pytorch, Vuejs, Reactjs, Angular
+-->
 
 ---
 ---
@@ -235,21 +261,36 @@ Understanding there are more than 2 types of themes documentation
 # Lesson 4
 
 
-Write with Empathy
+Write with Empathy ❤️
 
-- Close Knowledge Gap
-- Not Assuming
-- Inclusive and Effective
-- User Research
+
 
 <div grid="~ cols-2 gap-4">
 <div>
+<div v-click="1">
 
+- Close Knowledge Gap
 
+</div>
+<div v-click="2">
 
+- Not Assuming
+
+</div>
+<div v-click="3">
+
+- Inclusive and Effective
+
+</div>
+<div v-click="4">
+
+- User Research
+
+</div>
 </div>
 <div>
 
+<img src="paper-pencil-icon.png" style="height: 200px; margin: 0 auto">
 
 </div>
 </div>
@@ -260,38 +301,41 @@ Write with Empathy
 # Lesson 5
 
 
-Re-learning how to taking feedback the Open Source way.
+Taking feedback in Open Source.
 
-<div v-click="1">
 
-- 80% fantastic
-
-</div>
-<div v-click="2">
-
-- 20% not too bueno
-
-</div>
-<div v-click="3">
-
-- GitHub Issues
-
-</div>
-<div v-click="4">
-
-- Talking Directly with the community
-
-</div>
 
 
 <div grid="~ cols-2 gap-4">
 <div>
+<div v-click="2">
 
+- Review Github Issues
 
+</div>
+<div v-click="3">
 
+- Plugging into the ecosystem
+
+</div>
+<div v-click="4">
+
+- Facilitationg
+
+</div>
+<div v-click="5">
+
+- Talking Directly with the community
+
+</div>
 </div>
 <div>
 
+<div v-click="1">
+
+<img src="/Feedback_Loop.jpeg">
+
+</div>
 
 </div>
 </div>
