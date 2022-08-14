@@ -1,4 +1,5 @@
 {
+  "name": "msopensourcebootcamp",
   "private": true,
   "scripts": {
     "build": "slidev build",
@@ -6,9 +7,8 @@
     "export": "slidev export"
   },
   "dependencies": {
-    "@slidev/cli": "^0.27.18",
+    "@slidev/cli": "^0.35.4",
     "@slidev/theme-default": "*",
     "@slidev/theme-seriph": "*"
-  },
-  "name": "collaborate-with-pms"
+  }
 }

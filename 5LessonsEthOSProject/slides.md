@@ -95,60 +95,6 @@ class: text-center
 
 # Lesson 1
 
-Being okay with saying "I don't know....yet"
-
-<div grid="~ cols-2 gap-4">
-<div>
-
-<div v-click="1">
-
-<!-- - EIP-3091 for `@metamask/etherscan-link` -->
-- Why and How?
-
-</div>
-
-<div v-click="2">
-
-- Dig into one bit of relevant code
-
-</div>
-
-<div v-click="3">
-
-- Venture into the dependency tree
-
-</div>
-
-</div>
-
-
-<div>
-
-<div v-click="2">
-
-<img src="/1st-issue.png">
-
-</div>
-
-<br>
-<br>
-<br>
-
-<div v-click="3">
-
-### `@metamask/etherscan-link`
-
-</div>
-
-</div>
-
-</div>
-
----
----
-
-# Lesson 2
-
  Treating documentation like the other 50%
 <div grid="~ cols-2 gap-4">
 <div>
@@ -160,12 +106,12 @@ Being okay with saying "I don't know....yet"
 </div>
 <div v-click="2">
 
-- Audit existing documentation
+- Defining a structure
 
 </div>
 <div v-click="3">
 
-- Defining a structure
+- Audit existing documentation
 
 </div>
 
@@ -180,11 +126,12 @@ Being okay with saying "I don't know....yet"
 
 
 ---
+---
 
-# Lesson 3
+# Lesson 2
 
 
-Understanding there are more than 2 types of themes in documentation
+Understanding there are 4 themes in documentation
 
 
 
@@ -258,7 +205,7 @@ Understanding there are more than 2 types of themes in documentation
 ---
 ---
 
-# Lesson 4
+# Lesson 3
 
 
 Write with Empathy ❤️
@@ -279,11 +226,6 @@ Write with Empathy ❤️
 </div>
 <div v-click="3">
 
-- Inclusive and Effective
-
-</div>
-<div v-click="4">
-
 - User Research
 
 </div>
@@ -298,32 +240,23 @@ Write with Empathy ❤️
 ---
 ---
 
-# Lesson 5
+# Lesson 4
 
-
-Taking feedback in Open Source.
-
-
-
+Discovering feedback sources
 
 <div grid="~ cols-2 gap-4">
 <div>
-<div v-click="2">
+<div v-click="1">
 
 - Review Github Issues
 
 </div>
+<div v-click="2">
+
+- Review Pull Requests
+
+</div>
 <div v-click="3">
-
-- Plugging into the ecosystem
-
-</div>
-<div v-click="4">
-
-- Facilitationg
-
-</div>
-<div v-click="5">
 
 - Talking Directly with the community
 
@@ -331,13 +264,66 @@ Taking feedback in Open Source.
 </div>
 <div>
 
-<div v-click="1">
+<div v-click="4">
 
 <img src="/Feedback_Loop.jpeg">
 
 </div>
 
 </div>
+</div>
+
+---
+---
+# Lesson 5
+
+Being okay with saying "I don't know....yet"
+
+<div grid="~ cols-2 gap-4">
+<div>
+
+<div v-click="1">
+
+<!-- - EIP-3091 for `@metamask/etherscan-link` -->
+- Why and How?
+
+</div>
+
+<div v-click="2">
+
+- Dig into one bit of relevant code
+
+</div>
+
+<div v-click="3">
+
+- Venture into the dependency tree
+
+</div>
+
+</div>
+
+
+<div>
+
+<div v-click="2">
+
+<img src="/1st-issue.png">
+
+</div>
+
+<br>
+<br>
+<br>
+
+<div v-click="3">
+
+### `@metamask/etherscan-link`
+
+</div>
+
+</div>
+
 </div>
 
 ---
