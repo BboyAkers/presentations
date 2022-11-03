@@ -65,7 +65,43 @@ By: Austin Akers
 
 <div v-click="6">
 
+- 🤹 **How to Contribute?**
+
+</div>
+<div v-click="7">
+
 - 🤹 **Extra tips**
+
+</div>
+
+---
+---
+
+# Open Source Origin Story
+
+<br>
+<br>
+<br>
+<div grid="~ cols-3 gap-2" m="-t-2">
+
+<div v-click="1">
+<img src="/truffle-logo.png" style="height: 150px" alt="truffle logo" />
+<br>
+Truffle Con 2019
+</div>
+
+<div v-click="2">
+<img src="/metamask-logo.png" style="height: 150px" alt="metamask logo">
+<br>
+What would it be?
+</div>
+
+<div v-click="3" class="text-center">
+<img src="/MMDocsProto.png" alt="MetaMask Documentation Page Screenshot">
+<br>
+Documentation Prototype
+</div>
+
 
 </div>
 
@@ -75,11 +111,29 @@ By: Austin Akers
 
 ### Why?
 
+<div v-click="1">
+
 - It's the other 50% of the project.
+
+</div>
+
+<div v-click="2">
+
 - It's a great way for you to understand how the project works.
-- You unententially helps you become a SME.
+
+</div>
+
+<div v-click="3">
+
+- You unintentionally helps you become a SME(Subject Matter Expert).
+
+</div>
+
+<div v-click="4">
+
 - You put a smile on someones face.
 
+</div>
 
 ---
 
@@ -187,10 +241,44 @@ image: github-ms-logo.png
 
 ---
 
+# How To Contribute?
+
+
+
+<div v-click="1">
+
+- Documentation
+
+</div>
+
+<div v-click="2">
+
+- Library(ies)?
+
+</div>
+
+<div v-click="3">
+
+- Project Mangement
+
+</div>
+
+<div v-click="4">
+
+- Design
+
+</div>
+
+<div v-click="5">
+
+- Advocacy and more!
+
+</div>
+
+---
+
 # Extra tips
 
 - Have fun!
 - Be nice!
 - Protect you and your work!
-
----
