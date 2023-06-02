@@ -20,12 +20,6 @@ title: Welcome to Slidev
 
 By Austin Akers
 
-<div class="pt-12">
-  <span @click="$slidev.nav.next" class="px-2 py-1 rounded cursor-pointer" hover="bg-white bg-opacity-10">
-    Press Space for next page <carbon:arrow-right class="inline"/>
-  </span>
-</div>
-
 ---
 
 # Overview?
@@ -57,6 +51,43 @@ Here is another comment.
 
 ---
 
+# Quick Example
+
+<div class="grid grid-cols-2 gap-4">
+
+<div>
+
+```html
+<v-card class="mx-auto" width="400" elevation="10">
+  <v-img
+    class="mx-auto"
+    height="300px"
+    cover
+    src="images/austin_akers.jpeg"
+  ></v-img>
+  <v-card-title>Austin Akers</v-card-title>
+  <v-card-subtitle>
+    Senior Software Engineer @ Spring Health
+  </v-card-subtitle>
+  <v-card-text>
+    Austin is a husband and software engineer. He enjoys 
+    volunteering in his local community and mentoring 
+    young developers.
+  </v-card-text>
+</v-card>
+```
+
+</div>
+
+<div>
+  
+  <img src="images/v-card-example.png">
+
+</div>
+
+</div>
+---
+
 # Why?
 
 <div v-click="1">
@@ -85,6 +116,17 @@ Here is another comment.
 
 ---
 
+# Live Coding
+
+Link to Follow along:
+
+https://bit.ly/3oQC8nT
+
+
+<footer-link/>
+
+---
+
 # Dive Into The Codebase
 
 <div v-click="1">
@@ -102,6 +144,7 @@ Here is another comment.
 - See our component
 
 </div>
+<footer-link/>
 ---
 layout: image-right
 
@@ -133,7 +176,7 @@ image: images/vuetifyjs_vuetify_base_repo.png
 </div>
 
 <arrow v-click="5" x1="420" y1="150" x2="500" y2="150" color="#564" width="3" arrowSize="1" />
-
+<footer-link/>
 ---
 
 # Inside Packages
@@ -158,7 +201,7 @@ image: images/vuetifyjs_vuetify_base_repo.png
 
 <arrow v-click="2" x1="300" y1="140" x2="350" y2="140" color="#564" width="3" arrowSize="1" />
 <arrow v-click="4" x1="580" y1="140" x2="630" y2="140" color="#564" width="3" arrowSize="1" />
-
+<footer-link/>
 ---
 
 # Create Folder & Files
@@ -184,16 +227,10 @@ image: images/vuetifyjs_vuetify_base_repo.png
 </div>
 
 <arrow v-click="3" x1="550" y1="270" x2="610" y2="270" color="#564" width="3" arrowSize="1" />
-
+<footer-link/>
 ---
 
-# Live Coding
 
-Link to Follow along:
-
-Insert link before presenting
-
----
 
 # Different Sections
 
@@ -205,7 +242,7 @@ Insert link before presenting
 
 - Composables -> Properties for our components
 
-- Utilities -> Basline and glue
+- Utilities -> Baseline and glue
 
 - Types -> Types for our component
 
@@ -230,7 +267,130 @@ Insert link before presenting
 
 </div>
 </div>
+<footer-link/>
+---
+
+# Utilities
+
+<div v-click="1">
+
+- `genericComponent` - Foundation for us to create a component in Vuetify
+
+</div>
+<div v-click="2">
+
+- `useRender` - Vue 3 `.render` function to add this to our Virtual DOM Tree
+
+</div>
+
+<div v-click="3">
+
+- `PropsFactory` - Makes it easier for us to override default values via props (ex. elevation, border, ect.)
+
+</div>
+<br/>
+<br/>
+<div v-click="4">
+
+```ts
+// Utilities
+import { genericComponent, propsFactory, useRender } from "@/util";
+```
+
+</div>
+
+<footer-link/>
 
 ---
 
-## layout: end
+# Composables
+
+
+<div v-click="1">
+
+- `makeElevationProps` and `useElevation` - Modify elevation of the component
+
+</div>
+<div v-click="2">
+
+- `makeBorderProps` and `useBorder` - Modify the border of the component
+
+</div>
+<br />
+<br />
+<div v-click="3">
+
+```ts
+// Composables
+import { makeElevationProps, useElevation } from "@/composables/elevation";
+import { makeBorderProps, useBorder } from "@/composables/border";
+```
+
+</div>
+<div v-click="4">
+
+```ts
+export const makeVBasicComponentProps = propsFactory(
+  {
+    text: String,
+
+    ...makeElevationProps(),
+    ...makeBorderProps(),
+  },
+  "v-basic-component"
+);
+```
+
+</div>
+
+<footer-link/>
+
+---
+
+# Types
+
+<div v-click="1">
+
+- Types for our slots
+
+</div>
+<br />
+<div v-click="2">
+
+```ts
+export type VBasicComponentSlots = {
+  default: [];
+  text: [];
+};
+```
+
+</div>
+<footer-link />
+---
+
+# Bring it all together!
+
+- Props
+- Slots
+- Minor touches
+- Export
+
+---
+
+# Summary
+
+We created a basic component
+
+- Utilities
+- Composables
+- Props
+- Slots
+- Exported and Tested
+
+---
+
+# Connect
+
+- Twitter: @tweetmonster999
+- Github: BboyAkers
+- LinkedIn: https://bit.ly/3hS2Dn6

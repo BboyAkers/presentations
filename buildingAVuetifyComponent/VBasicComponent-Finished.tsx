@@ -5,13 +5,10 @@ import { makeBorderProps, useBorder } from "@/composables/border";
 // Utilities
 import { genericComponent, propsFactory, useRender } from "@/util";
 
-// Types
-import type { MakeSlots } from "@/util";
-
-export type VBasicComponentSlots = MakeSlots<{
+export type VBasicComponentSlots = {
   default: [];
   text: [];
-}>;
+};
 
 export const makeVBasicComponentProps = propsFactory(
   {
