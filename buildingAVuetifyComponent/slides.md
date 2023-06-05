@@ -311,19 +311,12 @@ import { genericComponent, propsFactory, useRender } from "@/util";
 - `makeElevationProps` and `useElevation` - Modify elevation of the component
 
 </div>
+<br />
 <div v-click="2">
-
-- `makeBorderProps` and `useBorder` - Modify the border of the component
-
-</div>
-<br />
-<br />
-<div v-click="3">
 
 ```ts
 // Composables
 import { makeElevationProps, useElevation } from "@/composables/elevation";
-import { makeBorderProps, useBorder } from "@/composables/border";
 ```
 
 </div>
@@ -335,7 +328,6 @@ export const makeVBasicComponentProps = propsFactory(
     text: String,
 
     ...makeElevationProps(),
-    ...makeBorderProps(),
   },
   "v-basic-component"
 );
@@ -370,11 +362,70 @@ export type VBasicComponentSlots = {
 
 # Bring it all together!
 
-- Props
-- Slots
-- Minor touches
-- Export
+Create our Vuetify Basic Component
 
+```tsx{all|1,9|2|4|6,8|all}
+export const VBasicComponent = genericComponent<VBasicComponentSlots>()({
+  name: "VBasicComponent",
+
+  props: makeVBasicComponentProps(),
+
+  setup(){
+    // More code here....
+  },
+});
+```
+
+<footer-link />
+---
+
+# Set up our setup()
+
+Creating and rendering the core of our component
+
+```tsx{all|1,15|3-5|7-14|all}
+setup(props, { slots }){
+
+  // Destructure Props
+  const { elevationClasses } = useElevation(props);
+
+  // Render
+  useRender(() => {
+
+    return (
+      <div class={[elevationClasses.value]}>
+        // More code here....
+      </div>
+    );
+  });
+},
+```
+
+<footer-link />
+---
+
+# Conditional rendering
+
+Rendering our text
+
+```tsx{all|3|7-11|all}
+// Render
+useRender(() => {
+  const hasText = !!(props.text || slots.text);
+
+  return (
+    <div class={[elevationClasses.value]}>
+      {hasText ? (
+        <div>{slots.text?.() ?? props.text}</div>
+      ) : (
+        <div>{slots.default?.()}</div>
+      )}
+    </div>
+  );
+});
+```
+
+<footer-link />
 ---
 
 # Summary
@@ -385,8 +436,9 @@ We created a basic component
 - Composables
 - Props
 - Slots
-- Exported and Tested
+- Exported
 
+<footer-link />
 ---
 
 # Connect
@@ -394,3 +446,5 @@ We created a basic component
 - Twitter: @tweetmonster999
 - Github: BboyAkers
 - LinkedIn: https://bit.ly/3hS2Dn6
+- Website: https://www.austinakers.com/
+- ❤️ Support Vuetify: https://vuetifyjs.com/
