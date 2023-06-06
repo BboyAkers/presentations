@@ -24,13 +24,21 @@ By Austin Akers
 
 # Overview?
 
+- 📝 **Quick example**
 - 📝 **Why?**
-- 🧑‍💻 **Dive Into The Codebase**
+- 🧑‍💻 **Put it into practice**
+    - Overview Vuetify repo
+    - Build our component
+    - See our component
 - 🤹 **Q&A**
 
+
+**Disclaimer: Dual screen recommended for presentation and coding
+
 <!--
-You can have `style` tag in markdown to override the style for the current page.
-Learn more: https://sli.dev/guide/syntax#embedded-styles
+- Change 'Dive Into The Codebase' to something else
+- Add sub-bullets under 'Dive Into The Codebase'
+- Give disclaimer* about needing dual screen for following along
 -->
 
 <style>
@@ -51,30 +59,22 @@ Here is another comment.
 
 ---
 
-# Quick Example
+# Quick example
 
 <div class="grid grid-cols-2 gap-4">
 
 <div>
 
 ```html
-<v-card class="mx-auto" width="400" elevation="10">
-  <v-img
-    class="mx-auto"
-    height="300px"
-    cover
-    src="images/austin_akers.jpeg"
-  ></v-img>
-  <v-card-title>Austin Akers</v-card-title>
-  <v-card-subtitle>
-    Senior Software Engineer @ Spring Health
-  </v-card-subtitle>
-  <v-card-text>
-    Austin is a husband and software engineer. He enjoys 
-    volunteering in his local community and mentoring 
-    young developers.
-  </v-card-text>
-</v-card>
+<v-app>
+  <v-container>
+    <!-- Our Component -->
+    <v-basic-component elevation="4"> 
+      testing
+    </v-basic-component>
+    <!-- /Our Component -->
+  </v-container>
+</v-app>
 ```
 
 </div>
@@ -86,31 +86,27 @@ Here is another comment.
 </div>
 
 </div>
+
+<!-- Change Quick exmaple to end result/ finished product of our component of the presentation -->
 ---
 
 # Why?
 
 <div v-click="1">
 
-- Satify my curiousity itch
+- Improve tool knowledge
 
 </div>
 
 <div v-click="2">
 
-- Improve tool knowledge
+- Deeper level comfort when debugging
 
 </div>
 
 <div v-click="3">
 
-- Deeper level comfort
-
-</div>
-
-<div v-click="4">
-
-- Lower the intimidation factor contributing
+- Understanding how to navigate the Vuetify project
 
 </div>
 
@@ -126,8 +122,15 @@ https://bit.ly/3oQC8nT
 <footer-link/>
 
 ---
+layout: center
 
-# Dive Into The Codebase
+---
+
+# Put it into practice
+
+---
+
+# Put it into practice
 
 <div v-click="1">
 
@@ -153,33 +156,39 @@ image: images/vuetifyjs_vuetify_base_repo.png
 
 # Overview Vuetify Repo
 
+
 <div v-click="1">
 
-- `packages/` -> api, documentation, vuetify
+- `scripts/` -> deploying, linting rules, ect.
 
 </div>
+
 <div v-click="2">
 
-- `patches/` -> patch caching 
+- `packages/` -> api, documentation, vuetify
 
 </div>
 
 <div v-click="3">
 
-- `scripts/` -> deploying, linting rules, ect.
-
-</div>
-<div v-click="4">
-
 - `templates/` -> components, and tests
 
 </div>
 
-<arrow v-click="5" x1="420" y1="150" x2="500" y2="150" color="#564" width="3" arrowSize="1" />
+<arrow v-click="4" x1="430" y1="150" x2="500" y2="150" color="#564" width="3" arrowSize="1" />
 <footer-link/>
+
+<!-- Put red boxes around the folders -->
+---
+layout: center
+
 ---
 
-# Inside Packages
+# Build our component
+
+---
+
+# Navigate to our folder
 <div class="grid grid-cols-3 gap-4">
 
 <div v-click="1">
@@ -204,29 +213,15 @@ image: images/vuetifyjs_vuetify_base_repo.png
 <footer-link/>
 ---
 
-# Create Folder & Files
+# Our Folder & Files
 
-<div class="grid grid-cols-2 gap-4">
 
 <div v-click="1">
-
-- `VBasicComponent/`
-  - `_variables.scss`
-  - `index.ts`
-  - `VBasicComponent.sass`
-  - `VBasicComponent.tsx`
-
-</div>
-
-<div v-click="2">
 
 <img src="images/vuetify_basic_component_file_structure.png" style="height:200px" />
 
 </div>
-
-</div>
-
-<arrow v-click="3" x1="550" y1="270" x2="610" y2="270" color="#564" width="3" arrowSize="1" />
+<arrow v-click="2" x1="100" y1="270" x2="160" y2="270" color="#564" width="3" arrowSize="1" />
 <footer-link/>
 ---
 
@@ -240,7 +235,7 @@ image: images/vuetifyjs_vuetify_base_repo.png
 
 - Components -> Importing other components
 
-- Composables -> Properties for our components
+- Composables -> Properties for our component
 
 - Utilities -> Baseline and glue
 
@@ -292,9 +287,17 @@ image: images/vuetifyjs_vuetify_base_repo.png
 <br/>
 <div v-click="4">
 
-```ts
+```tsx
+// Components
+
+// Composables
+
 // Utilities
 import { genericComponent, propsFactory, useRender } from "@/util";
+
+// Types
+
+// Our Component
 ```
 
 </div>
@@ -314,13 +317,22 @@ import { genericComponent, propsFactory, useRender } from "@/util";
 <br />
 <div v-click="2">
 
-```ts
+```tsx{all|4}
+// Components
+
 // Composables
 import { makeElevationProps, useElevation } from "@/composables/elevation";
+
+// Utilities
+import { genericComponent, propsFactory, useRender } from "@/util";
+
+// Types
+
+// Our Component
 ```
 
 </div>
-<div v-click="4">
+<div v-click="3">
 
 ```ts
 export const makeVBasicComponentProps = propsFactory(
@@ -350,10 +362,21 @@ export const makeVBasicComponentProps = propsFactory(
 <div v-click="2">
 
 ```ts
+// Components
+
+// Composables
+import { makeElevationProps, useElevation } from "@/composables/elevation";
+
+// Utilities
+import { genericComponent, propsFactory, useRender } from "@/util";
+
+// Types
 export type VBasicComponentSlots = {
   default: [];
   text: [];
 };
+
+// ect....
 ```
 
 </div>
@@ -386,7 +409,7 @@ Creating and rendering the core of our component
 ```tsx{all|1,15|3-5|7-14|all}
 setup(props, { slots }){
 
-  // Destructure Props
+  // Classes
   const { elevationClasses } = useElevation(props);
 
   // Render
