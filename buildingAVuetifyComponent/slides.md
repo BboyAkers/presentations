@@ -70,7 +70,9 @@ Here is another comment.
   <v-container>
     <!-- Our Component -->
     <v-basic-component elevation="4"> 
-      testing
+      Austin is a husband and software engineer. He enjoys 
+      volunteering in his local community and 
+      mentoring early-in-career develoeprs.
     </v-basic-component>
     <!-- /Our Component -->
   </v-container>
@@ -81,7 +83,7 @@ Here is another comment.
 
 <div>
   
-  <img src="images/v-card-example.png">
+  <img src="images/vuetify-basic-component.png">
 
 </div>
 
