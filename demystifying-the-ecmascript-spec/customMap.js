@@ -101,7 +101,3 @@ function austinMap(callback, thisArg) {
 Array.prototype.autinMap = austinMap;
 
 [1, 2, 3].austinMap((num) => num ** 2)
-
-document.getElementById("app").innerHTML = `
-${arrayOfEvenNumbers}
-`;
