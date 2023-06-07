@@ -38,7 +38,7 @@ const arraySpeciesCreate = (oldArray, length) => {
     // c. If thisRealm and realmC are not the same Realm Record, then
     //   i. If SameValue(C, realmC.[[Intrinsics]].[[%Array%]]) is true, set C to undefined.
   }
-
+  // Still unsure about this lol.
   if (typeof C === "object") {
     C = C[Symbol.species];
     if (C === null) {
@@ -47,10 +47,12 @@ const arraySpeciesCreate = (oldArray, length) => {
   }
   if (C === undefined) return Array(length);
 
+  // How does this throw actually get triggered?
   if (!isConstructor(C)) {
     throw new TypeError('object.constructor[Symbol.species] is not a constructor');
   }
   
+  //What is different from this below and if (C === undefined) return Array(length); on line 48?
   return construct(C, Number(oldArray.length));
 };
 
@@ -82,6 +84,7 @@ function austinMap(callback, thisArg) {
   const A = arraySpeciesCreate(O, len);
   let k = 0; 
   while (k < len) {
+    // Why are we stringifying this?
     const Pk = String(k);
     const kPresent = Pk in O;
     if (kPresent) {
