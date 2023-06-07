@@ -1,12 +1,11 @@
-import "./styles.css";
 // https://tc39.es/ecma262/#sec-array.prototype.map
-
-const testFunction = () => "test";
 
 // Typical Map fuction with use case
 const arrayOfOddNumbers = [1, 3, 5, 7, 9];
 
 const arrayOfEvenNumbers = arrayOfOddNumbers.map((item) => item + 1);
+
+
 
 /**
  * Calls constructor with arguments
