@@ -97,6 +97,6 @@ function austinMap(callback, thisArg) {
   return A;
 }
 
-Array.prototype.autinMap = austinMap;
+Array.prototype.austinMap = austinMap;
 
 [1, 2, 3].austinMap((num) => num ** 2)
