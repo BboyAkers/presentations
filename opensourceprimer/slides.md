@@ -34,42 +34,56 @@ layout: default
 ---
 
 # 👨🏿‍💻 Introduction
-fdasfdsa
+
+- Austin Akers
+- Husband, Father, Sr. Software Engineer at Spring Health
+- I enjoy spending time with family, programing, playing games, dancing(Bboy), Muay Thai, and cello
+- I've contributed to various open source projects
 
 ---
 
 # 🤷🏿‍♂️ What is Open-Source Technology?
 
-something
+- Software distributed with source code
+- Almost EVERYTHING uses open source software 
+  - Linux
+  - Programming Languages(ex. C++,PHP, ect.)
+  - Blender3d
+  - Wordpress
+  - ect.
 
 ---
 
 # 🛠 Why Contribute?
 
-jgdfioafj
+You are:
+- Helping people
+- Gaining knowledge in that domain
+- A stronger job candidate
+- Strengthening your communication skills
 
 ---
 
 # 🤔 How to Contribute?
 
-opfkda90
+- Source Code
+- Documentation
+- Evangelization
+- Translations
+- Give Guidance/mentoring/coaching
 
 ---
 
 # 🔥 Live Demo
-543w5r43wq
 
----
-
-# ⛑️ Project Management and Maintenance
-
-rfearfewaferqa
 
 ---
 
 # 🌟 Key Takeaways
 
-some stuff
+- Open source software helps run our daily lives
+- Great for resume building
+- Multiple ways to contribute
 
 ---
 
