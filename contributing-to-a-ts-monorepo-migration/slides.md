@@ -118,6 +118,13 @@ layout: center
 class: text-center
 ---
 
+# Quick Backstory
+
+---
+layout: center
+class: text-center
+---
+
 # 4 Lessons Learned
 
 ---
@@ -314,10 +321,10 @@ Leveraging tooling
 <img src="circle-ci-logo.jpeg" height="125px" width="125px" class=" inline-block" style="margin-left: 4em"/>
 <img src="github-copilot-logo.png" height="125px" width="125px" class=" inline-block" style="margin-left: 4em"/>
 ---
-layout: center
-class: text-center
----
 
-# Learn More
+# Connect
 
-[Documentations](https://sli.dev) · [GitHub](https://github.com/slidevjs/slidev) · [Showcases](https://sli.dev/showcases.html)
+- Twitter: @tweetmonster999
+- Github: BboyAkers
+- LinkedIn: https://bit.ly/3hS2Dn6
+- Website: https://www.austinakers.com/
