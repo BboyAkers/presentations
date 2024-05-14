@@ -247,7 +247,7 @@ level: 2
 # Lesson Three
 Renaming files from `.jsx` to `.tsx`
 <div class="grid grid-cols-3 gap-4">
-<div>
+<div v-click="1">
 
 Add **type** information to `.jsx` files
 
@@ -264,15 +264,40 @@ const WelcomeBanner = ({ name }) => {
 ```
 
 </div>
-<div>
+<div v-click="2">
 
 Where to place our types?
-
+```
+example-app
+|-- public/
+|-- src/
+|   |-- assets/
+|   |-- store/
+|   |   `-- user.ts
+|   |-- shared/
+|   |   `-- components/
+|   `-- index.ts
+|-- features/
+|   `-- Authentication/
+|       `-- Signup/
+|           |-- hooks/
+|           |-- queries/
+|           |-- view/
+|           `-- helpers/
+|-- .gitignore
+`-- .......
+```
 </div>
-<div>
+<div v-click="3">
 
 Tests are VERY helpful
-
+```ts
+describe("Register component", () => {
+  test('testing' () => {
+    // ........
+  })
+});
+```
 </div>
 </div>
 ---
@@ -284,6 +309,10 @@ Leveraging tooling
 - Prettier
 - Copilot (fancy auto-complete)
 
+<img src="eslint-logo.png" height="100px" width="100px" class="inline-block" />
+<img src="prettier-logo.png" height="100px" width="100px" class="inline-block" style="margin-left: 4em"/>
+<img src="circle-ci-logo.jpeg" height="125px" width="125px" class=" inline-block" style="margin-left: 4em"/>
+<img src="github-copilot-logo.png" height="125px" width="125px" class=" inline-block" style="margin-left: 4em"/>
 ---
 layout: center
 class: text-center
