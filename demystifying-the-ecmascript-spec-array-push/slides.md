@@ -99,12 +99,38 @@ level: 1
 
 
 ---
+
 ---
 
 # Why read the ECMAScript Specification?
-- Helps us understand the inners of the language
+<div class="grid grid-cols-3 gap-4">
+
+<div v-click="1">
+
+Understand the language
+<img class="pt-10" src="./ECMAScript-Specification-Suite.png" />
+
+</div>
+
+<div v-click="2">
+
+Challenges our thinking
+
+</div>
+
+<div v-click="3">
+
+ Being intentional writing code
+
+</div>
+
+</div>
+
+<!-- 
+- Helps us understand the innards of the language
 - Challenges our way of thinking(abstractions)
 - Encourages us to be more intentional writing code
+ -->
 
 ---
 transition: fade-out
