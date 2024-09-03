@@ -108,21 +108,21 @@ level: 1
 <div v-click="1">
 
 Understand the language
-<img class="pt-10" src="./ECMAScript-Specification-Suite.png" />
+<img class="pt-10" src="https://imagedelivery.net/nGYhisqu4x6SCDrz5V8Qxg/0aecd598-17b5-4caa-f7ac-63ef1c0e6500/public" />
 
 </div>
 
 <div v-click="2">
 
 Challenges our thinking
-<img class="pt-10" src="./thinking-meme.webp" />
+<img class="pt-10" src="https://imagedelivery.net/nGYhisqu4x6SCDrz5V8Qxg/ffdb4b11-1b04-4c76-bf07-4b5346925f00/public" />
 
 </div>
 
 <div v-click="3">
 
  Being intentional writing code
- <img class="pt-10" src="./cat-typing.gif" />
+ <img class="pt-10" src="https://imagedelivery.net/nGYhisqu4x6SCDrz5V8Qxg/ffb50204-3e01-4388-6a3a-f0f7e648c500/public" />
 
 </div>
 
