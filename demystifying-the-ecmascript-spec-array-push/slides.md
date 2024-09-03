@@ -5,10 +5,10 @@ theme: seriph
 # like them? see https://unsplash.com/collections/94734566/slidev
 background: https://cover.sli.dev
 # some information about your slides (markdown enabled)
-title: Welcome to Slidev
+title: Demystifying the ECMAScript&reg; Specification
 info: |
-  ## Slidev Starter Template
-  Presentation slides for developers.
+  ## Writing a polyfill.
+  Presentation slides for developers to understand how to approach reading and implementing the ECMAScript&reg; Specification.
 
   Learn more at [Sli.dev](https://sli.dev)
 # apply unocss classes to the current slide
@@ -103,7 +103,7 @@ level: 1
 ---
 
 # Why read the ECMAScript Specification?
-<div class="grid grid-cols-3 gap-4">
+<div class="grid grid-cols-3 gap-4 text-center">
 
 <div v-click="1">
 
@@ -115,12 +115,14 @@ Understand the language
 <div v-click="2">
 
 Challenges our thinking
+<img class="pt-10" src="./thinking-meme.webp" />
 
 </div>
 
 <div v-click="3">
 
  Being intentional writing code
+ <img class="pt-10" src="./cat-typing.gif" />
 
 </div>
 
@@ -137,10 +139,55 @@ transition: fade-out
 ---
 
 # How to approach the Specification?
- 1. Create a list of commonly used parts of the language
+
+<div class="grid grid-cols-2 gap-4">
+
+<!-- Left side -->
+<div>
+<div v-click="1">
+
+ 1. Create a list your favorite methods
+
+ </div>
+<div v-click="3">
+
  2. Start small, find the smallest spec
+
+ </div>
+<div v-click="4">
+
  3. Read the notes of each method first
+
+ </div>
+<div v-click="5">
+
  4. Read it like pseudo code
+
+</div>
+</div>
+ <!-- /Left side -->
+<!-- Right side -->
+<div v-click="2">
+ 
+ - `Array.prototype.push()`
+ - `Array.prototype.map()`
+ - `Array.prototype.toString()`
+ - `parseInt()`
+ - `Map()`
+ - `Map.prototype.has()`
+ - `Object.assign()`
+ - `Object.create()`
+ - etc.
+
+</div>
+<!-- /Right side -->
+
+ </div>
+
+ <Arrow x1="900" y1="115" x2="750" y2="115" v-click="6" />
+
+::right::
+ 
 
 ---
 layout: center
@@ -158,10 +205,9 @@ Array.prototype.push()
 
 # Summary
 
-- Broke down how to read the specification
-- Chose a common Array method `.push()`
+- Learned a way to approach the specification
 - Wrote a custom polyfill
-- Used our custom polyfill
+- Learned how `.push()` actually works
 
 ---
 layout: center
