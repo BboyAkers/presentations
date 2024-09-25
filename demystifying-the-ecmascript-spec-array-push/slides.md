@@ -95,7 +95,6 @@ level: 1
 - How to approach the Specification?
 - Writing a polyfill
 - Summary
-- Q&A
 
 
 ---
@@ -173,7 +172,6 @@ transition: fade-out
  - `Array.prototype.map()`
  - `Array.prototype.toString()`
  - `parseInt()`
- - `Map()`
  - `Map.prototype.has()`
  - `Object.assign()`
  - `Object.create()`
@@ -198,20 +196,24 @@ class: text-center
 
 <div class="text-center">
 Array.prototype.push()
+
+https://bit.ly/4dksQ6Z
 </div>
 
 
 ---
 
 # Summary
-
+- Why read the specification
 - Learned a way to approach the specification
 - Wrote a custom polyfill
 - Learned how `.push()` actually works
 
 ---
-layout: center
----
 
-# Q&A
+# Connect
 
+- Twitter: @tweetmonster999
+- Github: BboyAkers
+- LinkedIn: https://bit.ly/3hS2Dn6
+- Website: https://www.austinakers.com/
